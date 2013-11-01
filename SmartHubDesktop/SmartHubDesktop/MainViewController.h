@@ -8,14 +8,21 @@
 
 #import <Cocoa/Cocoa.h>
 #import "WundergroundController.h"
+#import <CoreLocation/CoreLocation.h>
 
-@interface MainViewController : NSViewController
+@interface MainViewController : NSViewController <CLLocationManagerDelegate>
 {
     IBOutlet NSTextField *currentTime;
     IBOutlet NSTextField *currentTemperature;
     
     NSDateFormatter *dateFormatter;
     WundergroundController *wundergroundController;
+    
+    CLLocationManager *locationManager;
+    CLLocation *currentLocation;
+    
+    NSString *currentState;
+    NSString *currentCity;
 }
 
 @end
