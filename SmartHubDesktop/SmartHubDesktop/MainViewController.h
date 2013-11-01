@@ -9,6 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "WundergroundController.h"
 #import <CoreLocation/CoreLocation.h>
+#import "GuestViewController.h"
 
 @interface MainViewController : NSViewController <CLLocationManagerDelegate>
 {

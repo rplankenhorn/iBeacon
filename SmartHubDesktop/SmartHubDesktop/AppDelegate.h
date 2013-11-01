@@ -7,11 +7,15 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "MainViewController.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
+{
+    NSView *currentSubView;
+    
+    NSMutableArray *viewControllers;
+    int currentViewControllerIndex;
+}
 
 @property (assign) IBOutlet NSWindow *window;
-@property (nonatomic, strong) IBOutlet MainViewController *mainViewController;
 
 @end

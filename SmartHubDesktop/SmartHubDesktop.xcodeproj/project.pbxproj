@@ -22,6 +22,7 @@
 		1416D6581822DA7B003F1C39 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1416D6561822DA7B003F1C39 /* MainViewController.xib */; };
 		144BE6691822DEC800159D23 /* solstice-logo-color.png in Resources */ = {isa = PBXBuildFile; fileRef = 144BE6681822DEC800159D23 /* solstice-logo-color.png */; };
 		144BE66D1822F06700159D23 /* WundergroundController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144BE66C1822F06700159D23 /* WundergroundController.m */; };
+		144BE66F1822FBD400159D23 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144BE66E1822FBD400159D23 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		144BE6681822DEC800159D23 /* solstice-logo-color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "solstice-logo-color.png"; sourceTree = "<group>"; };
 		144BE66B1822F06700159D23 /* WundergroundController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WundergroundController.h; sourceTree = "<group>"; };
 		144BE66C1822F06700159D23 /* WundergroundController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WundergroundController.m; sourceTree = "<group>"; };
+		144BE66E1822FBD400159D23 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				144BE66F1822FBD400159D23 /* CoreLocation.framework in Frameworks */,
 				1416D6211822D9EF003F1C39 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,6 +108,7 @@
 		1416D61F1822D9EF003F1C39 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				144BE66E1822FBD400159D23 /* CoreLocation.framework */,
 				1416D6201822D9EF003F1C39 /* Cocoa.framework */,
 				1416D63F1822D9EF003F1C39 /* XCTest.framework */,
 				1416D6221822D9EF003F1C39 /* Other Frameworks */,
