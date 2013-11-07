@@ -48,9 +48,19 @@
 
 - (void)switchView:(NSViewController *)viewController
 {
-    [self.window.contentView replaceSubview:currentSubView with:viewController.view];
+//    [self.window.contentView replaceSubview:currentSubView with:viewController.view];
+//    currentSubView = viewController.view;
+//    viewController.view.frame = ((NSView *)self.window.contentView).bounds;
+    
+	// Using an animation grouping because we may be changing the duration
+	[NSAnimationContext beginGrouping];
+	
+	// Call the animator instead of the view / window directly
+	[[[[self window] contentView] animator] replaceSubview:currentSubView with:viewController.view];
     currentSubView = viewController.view;
-    viewController.view.frame = ((NSView *)self.window.contentView).bounds;
+//	[[[self window] animator] setFrame:((NSView *)self.window.contentView).bounds display:YES];
+    
+	[NSAnimationContext endGrouping];
 }
 
 @end

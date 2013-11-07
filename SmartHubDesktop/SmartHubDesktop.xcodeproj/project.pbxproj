@@ -23,6 +23,8 @@
 		144BE6691822DEC800159D23 /* solstice-logo-color.png in Resources */ = {isa = PBXBuildFile; fileRef = 144BE6681822DEC800159D23 /* solstice-logo-color.png */; };
 		144BE66D1822F06700159D23 /* WundergroundController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144BE66C1822F06700159D23 /* WundergroundController.m */; };
 		144BE66F1822FBD400159D23 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144BE66E1822FBD400159D23 /* CoreLocation.framework */; };
+		144BE6731824417900159D23 /* GuestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144BE6711824417900159D23 /* GuestViewController.m */; };
+		144BE6741824417900159D23 /* GuestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 144BE6721824417900159D23 /* GuestViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,9 @@
 		144BE66B1822F06700159D23 /* WundergroundController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WundergroundController.h; sourceTree = "<group>"; };
 		144BE66C1822F06700159D23 /* WundergroundController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WundergroundController.m; sourceTree = "<group>"; };
 		144BE66E1822FBD400159D23 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		144BE6701824417900159D23 /* GuestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuestViewController.h; sourceTree = "<group>"; };
+		144BE6711824417900159D23 /* GuestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuestViewController.m; sourceTree = "<group>"; };
+		144BE6721824417900159D23 /* GuestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GuestViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,8 +141,11 @@
 				1416D6541822DA7B003F1C39 /* MainViewController.h */,
 				1416D6551822DA7B003F1C39 /* MainViewController.m */,
 				1416D6561822DA7B003F1C39 /* MainViewController.xib */,
-				1416D6381822D9EF003F1C39 /* Images.xcassets */,
 				144BE6681822DEC800159D23 /* solstice-logo-color.png */,
+				144BE6701824417900159D23 /* GuestViewController.h */,
+				144BE6711824417900159D23 /* GuestViewController.m */,
+				144BE6721824417900159D23 /* GuestViewController.xib */,
+				1416D6381822D9EF003F1C39 /* Images.xcassets */,
 				1416D6271822D9EF003F1C39 /* Supporting Files */,
 			);
 			path = SmartHubDesktop;
@@ -258,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				144BE6741824417900159D23 /* GuestViewController.xib in Resources */,
 				1416D62B1822D9EF003F1C39 /* InfoPlist.strings in Resources */,
 				1416D6391822D9EF003F1C39 /* Images.xcassets in Resources */,
 				1416D6581822DA7B003F1C39 /* MainViewController.xib in Resources */,
@@ -286,6 +295,7 @@
 				1416D6571822DA7B003F1C39 /* MainViewController.m in Sources */,
 				1416D62D1822D9EF003F1C39 /* main.m in Sources */,
 				144BE66D1822F06700159D23 /* WundergroundController.m in Sources */,
+				144BE6731824417900159D23 /* GuestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
