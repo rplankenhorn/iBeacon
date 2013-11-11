@@ -21,7 +21,7 @@ NSString *const WundergroundAPIGeoLookup = @"geolookup";
         
         NSDictionary *conditions = nil;
         
-        NSURL *url = [self createRequestURLPrefix:WundergroundAPIConditions parameters:[NSString stringWithFormat:@"%@/%@.json", state, city]];
+        NSURL *url = [self createRequestURLPrefix:WundergroundAPIConditions parameters:[NSString stringWithFormat:@"%@/%@.json", state, [city stringByReplacingOccurrencesOfString:@" " withString:@"%20"]]];
         conditions = [self sendRequestToURL:url];
         
         dispatch_async(dispatch_get_main_queue(), ^(void){

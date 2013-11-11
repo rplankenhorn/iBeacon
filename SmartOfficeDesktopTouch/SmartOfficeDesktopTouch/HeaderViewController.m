@@ -52,8 +52,8 @@
     NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     NSDateComponents *components = [calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit fromDate:now];
     
-    [currentDay setText:[NSString stringWithFormat:@"%.2d",[components day]]];
-    [currentMonth setText:[[dateFormatter monthSymbols] objectAtIndex:[components month]-1]];
+    [currentDay setText:[NSString stringWithFormat:@"%.2ld",(long)[components day]]];
+    [currentMonth setText:[[[dateFormatter shortMonthSymbols] objectAtIndex:[components month]-1] uppercaseString]];
     
     NSString *currentTimeString = [[dateFormatter stringFromDate:now] lowercaseString];
     [currentTime setText:currentTimeString];
@@ -62,9 +62,12 @@
 - (void)updateTemperature
 {
     [wundergroundController conditionsWithCity:currentCity state:currentState completion:^(NSDictionary *conditions) {
-        NSDictionary *currentObservation = [conditions objectForKey:@"current_observation"];
-        double temperature = [[currentObservation objectForKey:@"temp_f"] doubleValue];
-        [currentTemperature setText:[NSString stringWithFormat:@"%d°F", (int)(temperature + 0.5)]];
+        if(conditions != nil)
+        {
+            NSDictionary *currentObservation = [conditions objectForKey:@"current_observation"];
+            double temperature = [[currentObservation objectForKey:@"temp_f"] doubleValue];
+            [currentTemperature setText:[NSString stringWithFormat:@"%d°F", (int)(temperature + 0.5)]];
+        }
     }];
 }
 
@@ -74,6 +77,7 @@
 {
     currentLocation = newLocation;
     [locationManager stopMonitoringSignificantLocationChanges];
+    locationManager = nil;
     
     [wundergroundController geolookup:currentLocation completion:^(NSDictionary *geolookup) {
         NSDictionary *location = [geolookup objectForKey:@"location"];
