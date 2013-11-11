@@ -45,10 +45,15 @@
     
     [announcementTableView registerClass:[AnnouncementsTableViewCell class] forCellReuseIdentifier:CELL_IDENTIFIER];
     announcementTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    announcementTableView.scrollEnabled = NO;
+//    announcementTableView.scrollEnabled = NO;
     
     sectionHeaders = [[NSArray alloc] initWithObjects:@"Solstice Anniversaries", @"Solstice Birthdays", nil];
     
+    [self setupData];
+}
+
+- (void)setupData
+{
     NSMutableArray *mutableArray = [NSMutableArray arrayWithArray:nil];
     Anniversary *anniversary;
     Birthday *birthday;
@@ -60,6 +65,36 @@
     
     anniversary = [[Anniversary alloc] init];
     anniversary.name = @"Alyssa Bollinger";
+    anniversary.years = 2;
+    [mutableArray addObject:anniversary];
+    
+    anniversary = [[Anniversary alloc] init];
+    anniversary.name = @"Angelique Rickhoff";
+    anniversary.years = 1;
+    [mutableArray addObject:anniversary];
+    
+    anniversary = [[Anniversary alloc] init];
+    anniversary.name = @"Alyssa Bollinger";
+    anniversary.years = 2;
+    [mutableArray addObject:anniversary];
+    
+    anniversary = [[Anniversary alloc] init];
+    anniversary.name = @"2Angelique Rickhoff";
+    anniversary.years = 1;
+    [mutableArray addObject:anniversary];
+    
+    anniversary = [[Anniversary alloc] init];
+    anniversary.name = @"2Alyssa Bollinger";
+    anniversary.years = 2;
+    [mutableArray addObject:anniversary];
+    
+    anniversary = [[Anniversary alloc] init];
+    anniversary.name = @"2Angelique Rickhoff";
+    anniversary.years = 1;
+    [mutableArray addObject:anniversary];
+    
+    anniversary = [[Anniversary alloc] init];
+    anniversary.name = @"2Alyssa Bollinger";
     anniversary.years = 2;
     [mutableArray addObject:anniversary];
     
@@ -88,6 +123,26 @@
     
     birthday = [[Birthday alloc] init];
     birthday.name = @"Travis Hiltrop";
+    birthday.date = [dateFormatter dateFromString:@"11/17"];
+    [mutableArray addObject:birthday];
+    
+    birthday = [[Birthday alloc] init];
+    birthday.name = @"2Jessica Seiler";
+    birthday.date = [dateFormatter dateFromString:@"11/06"];
+    [mutableArray addObject:birthday];
+    
+    birthday = [[Birthday alloc] init];
+    birthday.name = @"2Olivia La Faire";
+    birthday.date = [dateFormatter dateFromString:@"11/13"];
+    [mutableArray addObject:birthday];
+    
+    birthday = [[Birthday alloc] init];
+    birthday.name = @"2Henry Oyuela";
+    birthday.date = [dateFormatter dateFromString:@"11/15"];
+    [mutableArray addObject:birthday];
+    
+    birthday = [[Birthday alloc] init];
+    birthday.name = @"2Travis Hiltrop";
     birthday.date = [dateFormatter dateFromString:@"11/17"];
     [mutableArray addObject:birthday];
     
@@ -197,6 +252,21 @@
         cell.detail.text = [NSString stringWithFormat:@"%.2ld", (long)[components day]];
         
         cell.detail.frame = CGRectMake(150, 0, 32, 25);
+    }
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    CGFloat sectionHeaderHeight = 40;
+    
+    if(scrollView.contentOffset.y <= sectionHeaderHeight &&
+       scrollView.contentOffset.y>=0)
+    {
+        scrollView.contentInset = UIEdgeInsetsMake(-scrollView.contentOffset.y, 0, 0, 0);
+    }
+    else if(scrollView.contentOffset.y >= sectionHeaderHeight)
+    {
+        scrollView.contentInset = UIEdgeInsetsMake(-sectionHeaderHeight, 0, 0, 0);
     }
 }
 
