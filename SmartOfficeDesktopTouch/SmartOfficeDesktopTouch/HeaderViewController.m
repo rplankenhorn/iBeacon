@@ -30,6 +30,8 @@
 {
     [super viewDidLoad];
     
+    [currentMonthBackground setImage:[UIImage imageNamed:@"cal_top"]];
+    
     dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"h:mm a"];
     

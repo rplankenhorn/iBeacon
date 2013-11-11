@@ -17,6 +17,8 @@
     IBOutlet UILabel *currentTime;
     IBOutlet UILabel *currentTemperature;
     
+    IBOutlet UIImageView *currentMonthBackground;
+    
     NSDateFormatter *dateFormatter;
     WundergroundController *wundergroundController;
     

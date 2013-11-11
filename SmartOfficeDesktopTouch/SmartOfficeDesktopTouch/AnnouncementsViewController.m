@@ -179,6 +179,11 @@
     return cell;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 29;
+}
+
 - (void)configureCustomCell:(AnnouncementsTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
     if(indexPath.section == 0)

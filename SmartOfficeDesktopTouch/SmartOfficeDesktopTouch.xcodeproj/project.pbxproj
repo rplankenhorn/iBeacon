@@ -15,6 +15,26 @@
 		14E14589182AF40E00B2BF83 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E14588182AF40E00B2BF83 /* CoreLocation.framework */; };
 		14E1458C182AF6C000B2BF83 /* AnnouncementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E1458B182AF6C000B2BF83 /* AnnouncementsViewController.m */; };
 		14E33C6C18316DB3007C4CEF /* AnnouncementsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E33C6B18316DB3007C4CEF /* AnnouncementsTableViewCell.m */; };
+		14E33CAD1831782C007C4CEF /* hi_asset@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E33C991831782C007C4CEF /* hi_asset@2x.png */; };
+		14E33CAE1831782C007C4CEF /* home_asset@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E33C9A1831782C007C4CEF /* home_asset@2x.png */; };
+		14E33CAF1831782C007C4CEF /* four_asset@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E33C9B1831782C007C4CEF /* four_asset@2x.png */; };
+		14E33CB01831782C007C4CEF /* star_asset@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E33C9C1831782C007C4CEF /* star_asset@2x.png */; };
+		14E33CB11831782C007C4CEF /* balloons_asset@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E33C9D1831782C007C4CEF /* balloons_asset@2x.png */; };
+		14E33CB21831782C007C4CEF /* cal_top@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E33C9E1831782C007C4CEF /* cal_top@2x.png */; };
+		14E33CB31831782C007C4CEF /* wifi_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E33C9F1831782C007C4CEF /* wifi_icon@2x.png */; };
+		14E33CB41831782C007C4CEF /* restrooms_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E33CA01831782C007C4CEF /* restrooms_icon@2x.png */; };
+		14E33CB51831782C007C4CEF /* drinks_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E33CA11831782C007C4CEF /* drinks_icon@2x.png */; };
+		14E33CB61831782C007C4CEF /* solstice_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E33CA21831782C007C4CEF /* solstice_logo@2x.png */; };
+		14E33CB71831782C007C4CEF /* hi_asset.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E33CA31831782C007C4CEF /* hi_asset.png */; };
+		14E33CB81831782C007C4CEF /* home_asset.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E33CA41831782C007C4CEF /* home_asset.png */; };
+		14E33CB91831782C007C4CEF /* four_asset.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E33CA51831782C007C4CEF /* four_asset.png */; };
+		14E33CBA1831782C007C4CEF /* star_asset.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E33CA61831782C007C4CEF /* star_asset.png */; };
+		14E33CBB1831782C007C4CEF /* balloons_asset.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E33CA71831782C007C4CEF /* balloons_asset.png */; };
+		14E33CBC1831782C007C4CEF /* cal_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E33CA81831782C007C4CEF /* cal_top.png */; };
+		14E33CBD1831782C007C4CEF /* wifi_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E33CA91831782C007C4CEF /* wifi_icon.png */; };
+		14E33CBE1831782C007C4CEF /* restrooms_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E33CAA1831782C007C4CEF /* restrooms_icon.png */; };
+		14E33CBF1831782C007C4CEF /* drinks_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E33CAB1831782C007C4CEF /* drinks_icon.png */; };
+		14E33CC01831782C007C4CEF /* solstice_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E33CAC1831782C007C4CEF /* solstice_logo.png */; };
 		14EAFD97182AED7B000FB62B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EAFD96182AED7B000FB62B /* Foundation.framework */; };
 		14EAFD99182AED7B000FB62B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EAFD98182AED7B000FB62B /* CoreGraphics.framework */; };
 		14EAFD9B182AED7C000FB62B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EAFD9A182AED7C000FB62B /* UIKit.framework */; };
@@ -52,6 +72,26 @@
 		14E1458B182AF6C000B2BF83 /* AnnouncementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnouncementsViewController.m; sourceTree = "<group>"; };
 		14E33C6A18316DB3007C4CEF /* AnnouncementsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnouncementsTableViewCell.h; sourceTree = "<group>"; };
 		14E33C6B18316DB3007C4CEF /* AnnouncementsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnouncementsTableViewCell.m; sourceTree = "<group>"; };
+		14E33C991831782C007C4CEF /* hi_asset@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hi_asset@2x.png"; sourceTree = "<group>"; };
+		14E33C9A1831782C007C4CEF /* home_asset@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_asset@2x.png"; sourceTree = "<group>"; };
+		14E33C9B1831782C007C4CEF /* four_asset@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "four_asset@2x.png"; sourceTree = "<group>"; };
+		14E33C9C1831782C007C4CEF /* star_asset@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_asset@2x.png"; sourceTree = "<group>"; };
+		14E33C9D1831782C007C4CEF /* balloons_asset@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "balloons_asset@2x.png"; sourceTree = "<group>"; };
+		14E33C9E1831782C007C4CEF /* cal_top@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cal_top@2x.png"; sourceTree = "<group>"; };
+		14E33C9F1831782C007C4CEF /* wifi_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wifi_icon@2x.png"; sourceTree = "<group>"; };
+		14E33CA01831782C007C4CEF /* restrooms_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "restrooms_icon@2x.png"; sourceTree = "<group>"; };
+		14E33CA11831782C007C4CEF /* drinks_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drinks_icon@2x.png"; sourceTree = "<group>"; };
+		14E33CA21831782C007C4CEF /* solstice_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "solstice_logo@2x.png"; sourceTree = "<group>"; };
+		14E33CA31831782C007C4CEF /* hi_asset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hi_asset.png; sourceTree = "<group>"; };
+		14E33CA41831782C007C4CEF /* home_asset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_asset.png; sourceTree = "<group>"; };
+		14E33CA51831782C007C4CEF /* four_asset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = four_asset.png; sourceTree = "<group>"; };
+		14E33CA61831782C007C4CEF /* star_asset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_asset.png; sourceTree = "<group>"; };
+		14E33CA71831782C007C4CEF /* balloons_asset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloons_asset.png; sourceTree = "<group>"; };
+		14E33CA81831782C007C4CEF /* cal_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cal_top.png; sourceTree = "<group>"; };
+		14E33CA91831782C007C4CEF /* wifi_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wifi_icon.png; sourceTree = "<group>"; };
+		14E33CAA1831782C007C4CEF /* restrooms_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = restrooms_icon.png; sourceTree = "<group>"; };
+		14E33CAB1831782C007C4CEF /* drinks_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drinks_icon.png; sourceTree = "<group>"; };
+		14E33CAC1831782C007C4CEF /* solstice_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = solstice_logo.png; sourceTree = "<group>"; };
 		14EAFD93182AED7B000FB62B /* SmartOfficeDesktopTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartOfficeDesktopTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14EAFD96182AED7B000FB62B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		14EAFD98182AED7B000FB62B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -121,6 +161,26 @@
 		14B11E68182AF10B0038D2CE /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				14E33C991831782C007C4CEF /* hi_asset@2x.png */,
+				14E33C9A1831782C007C4CEF /* home_asset@2x.png */,
+				14E33C9B1831782C007C4CEF /* four_asset@2x.png */,
+				14E33C9C1831782C007C4CEF /* star_asset@2x.png */,
+				14E33C9D1831782C007C4CEF /* balloons_asset@2x.png */,
+				14E33C9E1831782C007C4CEF /* cal_top@2x.png */,
+				14E33C9F1831782C007C4CEF /* wifi_icon@2x.png */,
+				14E33CA01831782C007C4CEF /* restrooms_icon@2x.png */,
+				14E33CA11831782C007C4CEF /* drinks_icon@2x.png */,
+				14E33CA21831782C007C4CEF /* solstice_logo@2x.png */,
+				14E33CA31831782C007C4CEF /* hi_asset.png */,
+				14E33CA41831782C007C4CEF /* home_asset.png */,
+				14E33CA51831782C007C4CEF /* four_asset.png */,
+				14E33CA61831782C007C4CEF /* star_asset.png */,
+				14E33CA71831782C007C4CEF /* balloons_asset.png */,
+				14E33CA81831782C007C4CEF /* cal_top.png */,
+				14E33CA91831782C007C4CEF /* wifi_icon.png */,
+				14E33CAA1831782C007C4CEF /* restrooms_icon.png */,
+				14E33CAB1831782C007C4CEF /* drinks_icon.png */,
+				14E33CAC1831782C007C4CEF /* solstice_logo.png */,
 				14E14586182AF17800B2BF83 /* solstice-logo-color.png */,
 			);
 			name = Images;
@@ -277,11 +337,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14E33CAD1831782C007C4CEF /* hi_asset@2x.png in Resources */,
+				14E33CB61831782C007C4CEF /* solstice_logo@2x.png in Resources */,
+				14E33CBC1831782C007C4CEF /* cal_top.png in Resources */,
+				14E33CBB1831782C007C4CEF /* balloons_asset.png in Resources */,
+				14E33CB01831782C007C4CEF /* star_asset@2x.png in Resources */,
+				14E33CBD1831782C007C4CEF /* wifi_icon.png in Resources */,
+				14E33CAF1831782C007C4CEF /* four_asset@2x.png in Resources */,
+				14E33CBE1831782C007C4CEF /* restrooms_icon.png in Resources */,
+				14E33CB91831782C007C4CEF /* four_asset.png in Resources */,
+				14E33CBA1831782C007C4CEF /* star_asset.png in Resources */,
+				14E33CB81831782C007C4CEF /* home_asset.png in Resources */,
+				14E33CB11831782C007C4CEF /* balloons_asset@2x.png in Resources */,
 				14B11E67182AEEB70038D2CE /* HeaderView.xib in Resources */,
 				14EAFDA1182AED7C000FB62B /* InfoPlist.strings in Resources */,
+				14E33CB51831782C007C4CEF /* drinks_icon@2x.png in Resources */,
 				14E14587182AF17800B2BF83 /* solstice-logo-color.png in Resources */,
+				14E33CC01831782C007C4CEF /* solstice_logo.png in Resources */,
 				14EAFDA9182AED7C000FB62B /* Images.xcassets in Resources */,
+				14E33CB31831782C007C4CEF /* wifi_icon@2x.png in Resources */,
+				14E33CB41831782C007C4CEF /* restrooms_icon@2x.png in Resources */,
+				14E33CB21831782C007C4CEF /* cal_top@2x.png in Resources */,
 				142110C6182AFD3D00BDD890 /* AnnouncementsView.xib in Resources */,
+				14E33CBF1831782C007C4CEF /* drinks_icon.png in Resources */,
+				14E33CAE1831782C007C4CEF /* home_asset@2x.png in Resources */,
+				14E33CB71831782C007C4CEF /* hi_asset.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
