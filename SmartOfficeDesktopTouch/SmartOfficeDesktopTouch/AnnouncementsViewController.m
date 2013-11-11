@@ -10,6 +10,10 @@
 #import "HeaderViewController.h"
 #import "AnnouncementsTableViewCell.h"
 
+#define ITEMS_PER_PAGE 4
+
+#define CELL_IDENTIFIER @"MyCellIdentifier"
+
 @implementation Anniversary
 @end
 
@@ -39,8 +43,9 @@
     HeaderViewController *headerViewController = [[HeaderViewController alloc] initWithNibName:@"HeaderView" bundle:nil];
     [headerView addSubview:headerViewController.view];
     
-    [announcementTableView registerClass:[AnnouncementsTableViewCell class] forCellReuseIdentifier:@"MyCellIdentifier"];
+    [announcementTableView registerClass:[AnnouncementsTableViewCell class] forCellReuseIdentifier:CELL_IDENTIFIER];
     announcementTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    announcementTableView.scrollEnabled = NO;
     
     sectionHeaders = [[NSArray alloc] initWithObjects:@"Solstice Anniversaries", @"Solstice Birthdays", nil];
     
@@ -95,18 +100,6 @@
 {
     return 2;
 }
-
-//- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
-//{
-//    if(section == 0)
-//    {
-//        return @"Solstice Anniversaries";
-//    }
-//    else
-//    {
-//        return @"Solstice Birthdays";
-//    }
-//}
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
@@ -165,13 +158,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *simpleTableIdentifier = @"SimpleTableItem";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CELL_IDENTIFIER];
     
     if(cell == nil)
     {
-        cell = [[AnnouncementsTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+        cell = [[AnnouncementsTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CELL_IDENTIFIER];
     }
     
     [self configureCustomCell:(AnnouncementsTableViewCell *)cell atIndexPath:indexPath];
@@ -192,6 +183,8 @@
         
         cell.name.text = anniversary.name;
         cell.detail.text = [NSString stringWithFormat:@"%d year%@", anniversary.years, (anniversary.years > 1 ? @"s" : @"")];
+        
+        cell.detail.frame = CGRectMake(150, 0, 65, 26);
     }
     else
     {
