@@ -13,6 +13,7 @@
 @interface HeaderViewController : UIViewController <CLLocationManagerDelegate>
 {
     IBOutlet UILabel *currentDay;
+    IBOutlet UILabel *currentMonth;
     IBOutlet UILabel *currentTime;
     IBOutlet UILabel *currentTemperature;
     

@@ -20,7 +20,7 @@
     
     if(self)
     {
-        // Custom initialization
+        [self.view setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
     }
     
     return self;
@@ -53,6 +53,7 @@
     NSDateComponents *components = [calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit fromDate:now];
     
     [currentDay setText:[NSString stringWithFormat:@"%.2d",[components day]]];
+    [currentMonth setText:[[dateFormatter monthSymbols] objectAtIndex:[components month]-1]];
     
     NSString *currentTimeString = [[dateFormatter stringFromDate:now] lowercaseString];
     [currentTime setText:currentTimeString];
