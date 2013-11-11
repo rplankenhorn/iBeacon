@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "MainViewController.h"
 
 @implementation AppDelegate
 
@@ -15,9 +14,9 @@
 {    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    MainViewController *mainViewController = [[MainViewController alloc] initWithNibName:@"MainView" bundle:nil];
+    self.mainViewController = [[AnnouncementsViewController alloc] initWithNibName:@"MainView" bundle:nil];
     
-    [self.window addSubview:mainViewController.view];
+    [self.window addSubview:self.mainViewController.view];
     
     [self.window makeKeyAndVisible];
     return YES;

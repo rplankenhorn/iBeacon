@@ -13,7 +13,7 @@
 		14B11E67182AEEB70038D2CE /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B11E66182AEEB70038D2CE /* HeaderView.xib */; };
 		14E14587182AF17800B2BF83 /* solstice-logo-color.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E14586182AF17800B2BF83 /* solstice-logo-color.png */; };
 		14E14589182AF40E00B2BF83 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E14588182AF40E00B2BF83 /* CoreLocation.framework */; };
-		14E1458C182AF6C000B2BF83 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E1458B182AF6C000B2BF83 /* MainViewController.m */; };
+		14E1458C182AF6C000B2BF83 /* AnnouncementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E1458B182AF6C000B2BF83 /* AnnouncementsViewController.m */; };
 		14EAFD97182AED7B000FB62B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EAFD96182AED7B000FB62B /* Foundation.framework */; };
 		14EAFD99182AED7B000FB62B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EAFD98182AED7B000FB62B /* CoreGraphics.framework */; };
 		14EAFD9B182AED7C000FB62B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EAFD9A182AED7C000FB62B /* UIKit.framework */; };
@@ -47,8 +47,8 @@
 		14B11E66182AEEB70038D2CE /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		14E14586182AF17800B2BF83 /* solstice-logo-color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "solstice-logo-color.png"; sourceTree = "<group>"; };
 		14E14588182AF40E00B2BF83 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		14E1458A182AF6C000B2BF83 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		14E1458B182AF6C000B2BF83 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		14E1458A182AF6C000B2BF83 /* AnnouncementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnouncementsViewController.h; sourceTree = "<group>"; };
+		14E1458B182AF6C000B2BF83 /* AnnouncementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnouncementsViewController.m; sourceTree = "<group>"; };
 		14EAFD93182AED7B000FB62B /* SmartOfficeDesktopTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartOfficeDesktopTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14EAFD96182AED7B000FB62B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		14EAFD98182AED7B000FB62B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -98,8 +98,8 @@
 				14B11E65182AEEA00038D2CE /* XIBs */,
 				14B11E61182AEE840038D2CE /* HeaderViewController.h */,
 				14B11E62182AEE840038D2CE /* HeaderViewController.m */,
-				14E1458A182AF6C000B2BF83 /* MainViewController.h */,
-				14E1458B182AF6C000B2BF83 /* MainViewController.m */,
+				14E1458A182AF6C000B2BF83 /* AnnouncementsViewController.h */,
+				14E1458B182AF6C000B2BF83 /* AnnouncementsViewController.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -298,7 +298,7 @@
 				14B11E60182AEE160038D2CE /* WundergroundController.m in Sources */,
 				14B11E63182AEE840038D2CE /* HeaderViewController.m in Sources */,
 				14EAFDA7182AED7C000FB62B /* AppDelegate.m in Sources */,
-				14E1458C182AF6C000B2BF83 /* MainViewController.m in Sources */,
+				14E1458C182AF6C000B2BF83 /* AnnouncementsViewController.m in Sources */,
 				14EAFDA3182AED7C000FB62B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

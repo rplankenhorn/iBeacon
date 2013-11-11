@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface AnnouncementsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {
     IBOutlet UIView *headerView;
     

@@ -6,14 +6,14 @@
 //  Copyright (c) 2013 Solstice Mobile. All rights reserved.
 //
 
-#import "MainViewController.h"
+#import "AnnouncementsViewController.h"
 #import "HeaderViewController.h"
 
-@interface MainViewController ()
+@interface AnnouncementsViewController ()
 
 @end
 
-@implementation MainViewController
+@implementation AnnouncementsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -58,7 +58,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
-    if (cell == nil)
+    if(cell == nil)
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
     }
