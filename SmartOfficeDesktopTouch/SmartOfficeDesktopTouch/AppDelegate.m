@@ -14,7 +14,7 @@
 {    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    self.mainViewController = [[AnnouncementsViewController alloc] initWithNibName:@"MainView" bundle:nil];
+    self.mainViewController = [[AnnouncementsViewController alloc] initWithNibName:@"AnnouncementsView" bundle:nil];
     
     [self.window addSubview:self.mainViewController.view];
     
