@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UIViewController
+@interface MainViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+{
+    IBOutlet UIView *headerView;
+    
+    NSArray *tableData;
+}
 
 @end
